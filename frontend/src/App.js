@@ -6,6 +6,7 @@ import Aos from "aos";
 import "animate.css";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import DisplayGrid from "./Components/DisplayGrid/DisplayGrid";
 
 import {
   faGraduationCap,
@@ -130,6 +131,7 @@ function App() {
           </div>
         </div>
       </div>
+      <DisplayGrid />
     </>
   );
 }
