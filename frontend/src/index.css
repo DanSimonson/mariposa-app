@@ -298,9 +298,9 @@ body {
     margin-top: 2rem;
     line-height: 1.8;
   }
-  #parent {
+  /* #parent {
     border: 5px solid red;
-  }
+  } */
   #header {
     margin-top: 20rem;
   }

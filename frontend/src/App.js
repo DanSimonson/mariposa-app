@@ -20,11 +20,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 //comment.
-/*
-// "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    // "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    // "@fortawesome/react-fontawesome": "^0.1.16",
-*/
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -41,7 +36,7 @@ function App() {
     <>
       <div id="parent">
         <div className="name">Dan Simonson</div>
-        {/* <div id="header" className="iconSize">
+        <div id="header" className="iconSize">
           <div className="boxes bounceMeOne">
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           </div>
@@ -53,8 +48,8 @@ function App() {
           </div>
           <div className="boxes bounceMeFour">
             <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-          </div>*
-          </div> */}
+          </div>
+        </div>
         <div className="helloSection">
           <div id="left">
             <p>Hi. I’m Dan Simonson, nice to meet you.</p>
@@ -83,12 +78,12 @@ function App() {
         </div>
         <div className="container">
           <div className="grid-item a" data-aos="zoom-in-up">
-            {/* <span>
+            <span>
               <FontAwesomeIcon icon={faGraduationCap}>
                 Education
               </FontAwesomeIcon>
               &nbsp; Education
-            </span> */}
+            </span>
             <p className="pClass">
               I have an Associates in Programming and a Bachelor of Science in
               Computer Science (cum laude/3.65 GPA) as well as a Free Code Camp
@@ -96,13 +91,13 @@ function App() {
             </p>
           </div>
           <div className="grid-item b" data-aos="zoom-in-up">
-            {/* <span>
+            <span>
               <FontAwesomeIcon
                 style={{ color: "#222" }}
                 icon={faBriefcase}
               ></FontAwesomeIcon>
               &nbsp; Skills
-            </span> */}
+            </span>
             <p className="pClass">
               I enjoy bringing ideas to life in the browser. I am a full stack
               developer who is well versed in JavaScript, React, Vue, CSS3 and
@@ -111,12 +106,12 @@ function App() {
           </div>
 
           <div className="grid-item c" data-aos="zoom-in-up">
-            {/* <span>
+            <span>
               <FontAwesomeIcon style={{ color: "#222" }} icon={faHeart}>
                 {" "}
               </FontAwesomeIcon>
               &nbsp; Passion
-            </span> */}
+            </span>
             <p className="pClass">
               Over the last several years I have invested thousands of hours
               honing my craft. I am perpetually working on improving my chops
