@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <div id="parent">
-        <div className="name">Dan Simonson</div>
+        <div className="name">Dan Simonson @ mariposaweb.net</div>
         <div id="header" className="iconSize">
           <div className="boxes bounceMeOne">
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
@@ -60,14 +60,20 @@ function App() {
               I am passionate about building excellent software that improves
               the lives of those around me. I specialize in creating software
               for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations.{" "}
+              way to large enterprise corporations at mariposaweb.net
               {/*What would you do if you had
               a software expert available at your fingertips? */}
             </p>
           </div>
         </div>
+        {/**data-aos="zoom-in-left" */}
+        {/*className="fillerSpan"*/}
+        <div className="filler">
+          Software Engineer<span className="fillerSpan">@mariposaweb.net</span>
+        </div>
       </div>
       <div className="wrapper">
+        <div className="transition">Some Stuff About Me</div>
         <div className="about">
           <p align="center" data-aos="slide-right">
             About Dan Simonson
@@ -79,7 +85,10 @@ function App() {
         <div className="container">
           <div className="grid-item a" data-aos="zoom-in-up">
             <span>
-              <FontAwesomeIcon icon={faGraduationCap}>
+              <FontAwesomeIcon
+                style={{ color: "green" }}
+                icon={faGraduationCap}
+              >
                 Education
               </FontAwesomeIcon>
               &nbsp; Education
@@ -93,7 +102,7 @@ function App() {
           <div className="grid-item b" data-aos="zoom-in-up">
             <span>
               <FontAwesomeIcon
-                style={{ color: "#222" }}
+                style={{ color: "blue" }}
                 icon={faBriefcase}
               ></FontAwesomeIcon>
               &nbsp; Skills
@@ -107,9 +116,10 @@ function App() {
 
           <div className="grid-item c" data-aos="zoom-in-up">
             <span>
-              <FontAwesomeIcon style={{ color: "#222" }} icon={faHeart}>
-                {" "}
-              </FontAwesomeIcon>
+              <FontAwesomeIcon
+                style={{ color: "red" }}
+                icon={faHeart}
+              ></FontAwesomeIcon>
               &nbsp; Passion
             </span>
             <p className="pClass">
