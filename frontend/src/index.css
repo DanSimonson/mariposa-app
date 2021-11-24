@@ -251,7 +251,7 @@ body {
   color: #525d68;
   -webkit-text-stroke: 1px black;
   font-size: 3rem;
-  height: 100%;
+  /* height: 100%; */
 }
 
 /*media queries*/
@@ -311,17 +311,33 @@ body {
     font-size: 3rem;
   }
 }
+
 /**everything over*/
 @media (min-width: 1440px) {
   .pClass {
     line-height: 1.8;
   }
-  .grid-item a {
+  /* .grid-item a {
     margin-top: 1rem;
+  } */
+  #right {
+    font-size: 2.3rem;
+  }
+  #left {
+    font-size: 6rem;
+  }
+  .container {
+    height: 60vh;
+  }
+  .iconSize {
+    font-size: 15rem;
+  }
+  .grid-item {
+    font-size: 2.5rem;
   }
 }
-/* @media (min-width: 1440px) {
-  .pClass {
-    line-height: 1.8;
+@media (min-width: 1028px) and (orientation: landscape) {
+  .container {
+    /* height: 180vh; */
   }
-} */
+}
