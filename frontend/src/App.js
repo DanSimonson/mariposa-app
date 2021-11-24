@@ -3,9 +3,15 @@ import axios from "axios";
 import "./data";
 import "./index.css";
 import Aos from "aos";
+import "animate.css";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faGraduationCap,
+  faBriefcase,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faFacebook,
@@ -31,31 +37,34 @@ function App() {
       <div id="parent">
         <div className="name">Dan Simonson</div>
         <div id="header" className="iconSize">
-          <div className="boxes">
+          <div className="boxes bounceMeOne">
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           </div>
-          <div className="boxes">
+          <div className="boxes bounceMeTwo">
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
           </div>
-          <div className="boxes">
+          <div className="boxes bounceMeThree">
             <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
           </div>
-          <div className="boxes">
+          <div className="boxes bounceMeFour">
             <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
           </div>
         </div>
-        <div id="left">
-          <p>Hi. I’m Dan Simonson, nice to meet you.</p>
-          <p>Please take a look around!</p>
-        </div>
-        <div id="right">
-          <p>
-            I am passionate about building excellent software that improves the
-            lives of those around me. I specialize in creating software for
-            clients ranging from individuals and small-businesses all the way to
-            large enterprise corporations. What would you do if you had a
-            software expert available at your fingertips?
-          </p>
+        <div className="helloSection">
+          <div id="left">
+            <p>Hi. I’m Dan Simonson, nice to meet you.</p>
+            <p>Please take a look around!</p>
+          </div>
+          <div id="right">
+            <p>
+              I am passionate about building excellent software that improves
+              the lives of those around me. I specialize in creating software
+              for clients ranging from individuals and small-businesses all the
+              way to large enterprise corporations.{" "}
+              {/*What would you do if you had
+              a software expert available at your fingertips? */}
+            </p>
+          </div>
         </div>
       </div>
       <div className="wrapper">
@@ -67,13 +76,16 @@ function App() {
             How does he know this stuff
           </p>
         </div>
-        {/* <div className="container">
+        <div className="container">
           <div className="grid-item a" data-aos="zoom-in-up">
             <span>
-              <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education{" "}
+              {/* <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education*/}
+              <FontAwesomeIcon icon={faGraduationCap}>
+                Education
+              </FontAwesomeIcon>
+              &nbsp; Education
             </span>
-            <p>
-              {" "}
+            <p className="pClass">
               I have an Associates in Programming and a Bachelor of Science in
               Computer Science (cum laude/3.65 GPA) as well as a Free Code Camp
               Front End Certificate
@@ -81,9 +93,13 @@ function App() {
           </div>
           <div className="grid-item b" data-aos="zoom-in-up">
             <span>
-              <i class="fa fa-briefcase" aria-hidden="true"></i> Skills
+              <FontAwesomeIcon
+                style={{ color: "#222" }}
+                icon={faBriefcase}
+              ></FontAwesomeIcon>
+              &nbsp; Skills
             </span>
-            <p>
+            <p className="pClass">
               I enjoy bringing ideas to life in the browser. I am a full stack
               developer who is well versed in JavaScript, React, Vue, CSS3 and
               their accompanying ecosystems.
@@ -92,15 +108,18 @@ function App() {
 
           <div className="grid-item c" data-aos="zoom-in-up">
             <span>
-              <i class="fa fa-heart" aria-hidden="true"></i> Passion
+              <FontAwesomeIcon style={{ color: "#222" }} icon={faHeart}>
+                {" "}
+              </FontAwesomeIcon>
+              &nbsp; Passion
             </span>
-            <p>
+            <p className="pClass">
               Over the last several years I have invested thousands of hours
               honing my craft. I am perpetually working on improving my chops
-              one problem at a time.{" "}
+              one problem at a time.
             </p>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
