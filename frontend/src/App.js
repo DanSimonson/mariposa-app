@@ -7,6 +7,7 @@ import "animate.css";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DisplayGrid from "./Components/DisplayGrid/DisplayGrid";
+import DisplayFooter from "./Components/DisplayFooter/DisplayFooter";
 import { NavLink, Link } from "react-router-dom";
 
 import {
@@ -134,7 +135,7 @@ function App() {
             </span>
             <p className="pClass">
               I enjoy bringing ideas to life in the browser. I am a full stack
-              developer who is well versed in JavaScript, React, Vue, CSS3 and
+              developer who is well versed in JavaScript, React, Node, CSS3 and
               their accompanying ecosystems.
             </p>
           </div>
@@ -156,6 +157,7 @@ function App() {
         </div>
       </div>
       <DisplayGrid />
+      {/* <DisplayFooter /> */}
     </>
   );
 }

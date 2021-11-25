@@ -37,7 +37,8 @@
 }
 .paragraph {
   text-align: center;
-  padding: 0.1rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
 }
 
 .heroImage {
@@ -56,7 +57,8 @@
 .display-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  justify-content: center;
+  grid-row-gap: 40px;
+  //justify-content: center;
   overflow: hidden;
   //box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
   background-color: darkblue;
@@ -107,7 +109,12 @@
   text-align: center;
 }
 .display-card {
-  border: 5px solid yellow;
+  border: 1px solid #f5d020;
+  //box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px,
+    red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px,
+    red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   margin: 0.5rem auto;
   display: flex;
   justify-content: center;
@@ -167,7 +174,7 @@
   transform: rotateX(180deg);
 }
 .card__face {
-  border: 5px solid yellow;
+  border: 1px solid #f5d020;
   position: absolute;
   width: 100%;
   height: 100%;

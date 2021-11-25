@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./DisplayGrid.scss";
-//import DisplayFooter from "../Components/Footer/DisplayFooter";
+import DisplayFooter from "../DisplayFooter/DisplayFooter";
 //import ScrollAnimation from "react-animate-on-scroll";
 import { NavLink, Link } from "react-router-dom";
 function DisplayGrid() {
@@ -51,7 +51,7 @@ function DisplayGrid() {
       id: "6",
       title: "Next Egg",
       content:
-        "The next egg hatched could be your business. Call or Email me for more information.",
+        "The next egg hatched could be your business. Email or Text me for more information.",
       src: "https://fakeimg.pl/400x300/009578/fff/",
     },
   ];
@@ -110,7 +110,7 @@ function DisplayGrid() {
           <h1> Accomplishments</h1>
           <h5 className="paragraph">
             Focusing on web and application development, I have leveraged my
-            years of experience to help my clients achieve their goals.{" "}
+            years of experience to help my clients achieve their goals.
           </h5>
         </div>
         <div className="card_outer">
@@ -162,7 +162,7 @@ function DisplayGrid() {
             // </ScrollAnimation>
           ))}
         </div>
-        {/* <DisplayFooter /> */}
+        <DisplayFooter />
       </div>
     </React.Fragment>
   );
