@@ -65,6 +65,10 @@
   margin: 0.5rem;
   padding: 0.5rem;
 }
+.animateCard:hover {
+  animation: pulse;
+  animation-duration: 2s;
+}
 .display-content {
   //background-color: darkblue;
   //border: 5px solid red;

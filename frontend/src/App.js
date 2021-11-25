@@ -120,8 +120,8 @@ function App() {
             </span>
             <p className="pClass">
               I have an Associates in Programming and a Bachelor of Science in
-              Computer Science (cum laude/3.65 GPA) as well as a Free Code Camp
-              Front End Certificate
+              Computer Science (cum laude/3.65 GPA) as well as well as several
+              Free Code Camp and HackerRank Certificates
             </p>
           </div>
           <div className="grid-item b" data-aos="zoom-in-up">

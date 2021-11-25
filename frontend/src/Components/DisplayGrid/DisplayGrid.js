@@ -151,7 +151,7 @@ function DisplayGrid() {
             //   initiallyVisible={false}
             //   animateIn="tada"
             // >
-            <div key={card.id} className="display-card">
+            <div key={card.id} className="display-card animateCard">
               {/*<img className="display-image"  src="https://fakeimg.pl/400x300/009578/fff/" alt="card image"/>*/}
               {/*<div className='display-image'></div>*/}
               <div className="display-content">
