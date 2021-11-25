@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../data";
-//import "./index.css";
 import Aos from "aos";
 import "animate.css";
 import "aos/dist/aos.css";
@@ -9,8 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DisplayGrid from "../../Components/DisplayGrid/DisplayGrid";
 import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
 import { NavLink, Link } from "react-router-dom";
-//import { BrowserRouter, Route } from "react-router-dom";
-//import Home from "./Views/Home/Home";
 
 import {
   faGraduationCap,

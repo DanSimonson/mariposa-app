@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./DisplayGrid.scss";
 import DisplayFooter from "../DisplayFooter/DisplayFooter";
-//import ScrollAnimation from "react-animate-on-scroll";
 import { NavLink, Link } from "react-router-dom";
 function DisplayGrid() {
   let cards = [
@@ -108,10 +107,10 @@ function DisplayGrid() {
         <div className="accomplishments">
           <h1>Contracting </h1>
           <h1> Accomplishments</h1>
-          <h5 className="paragraph">
+          <p className="paragraph">
             Focusing on web and application development, I have leveraged my
             years of experience to help my clients achieve their goals.
-          </h5>
+          </p>
         </div>
         <div className="card_outer">
           <div className="card__inner">
@@ -145,21 +144,12 @@ function DisplayGrid() {
         </div>
         <div className="display-container">
           {cards.map((card, index) => (
-            // <ScrollAnimation
-            //   delay={400}
-            //   duration={3}
-            //   initiallyVisible={false}
-            //   animateIn="tada"
-            // >
             <div key={card.id} className="display-card animateCard">
-              {/*<img className="display-image"  src="https://fakeimg.pl/400x300/009578/fff/" alt="card image"/>*/}
-              {/*<div className='display-image'></div>*/}
               <div className="display-content">
                 <h3>{card.title}</h3>
                 <p>{card.content}</p>
               </div>
             </div>
-            // </ScrollAnimation>
           ))}
         </div>
         <DisplayFooter />
