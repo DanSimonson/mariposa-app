@@ -41,6 +41,13 @@ function DisplayGrid() {
       src: "https://fakeimg.pl/400x300/009578/fff/",
     },
     {
+      id: "5",
+      title: "Safeway",
+      content:
+        "Software Engineer creating a dashboard to logistically track products for grocery stores.",
+      src: "https://fakeimg.pl/400x300/009578/fff/",
+    },
+    {
       id: "6",
       title: "Next Egg",
       content:
