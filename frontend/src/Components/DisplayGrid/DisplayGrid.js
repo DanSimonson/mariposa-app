@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./DisplayGrid.scss";
 //import DisplayFooter from "../Components/Footer/DisplayFooter";
 //import ScrollAnimation from "react-animate-on-scroll";
-//import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 function DisplayGrid() {
   let cards = [
     {

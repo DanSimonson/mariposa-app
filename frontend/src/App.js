@@ -7,6 +7,7 @@ import "animate.css";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DisplayGrid from "./Components/DisplayGrid/DisplayGrid";
+import { NavLink, Link } from "react-router-dom";
 
 import {
   faGraduationCap,
@@ -38,18 +39,41 @@ function App() {
       <div id="parent">
         <div className="name">Dan Simonson @ mariposaweb.net</div>
         <div id="header" className="iconSize">
-          <div className="boxes bounceMeOne">
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-          </div>
-          <div className="boxes bounceMeTwo">
-            <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-          </div>
-          <div className="boxes bounceMeThree">
-            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-          </div>
-          <div className="boxes bounceMeFour">
-            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-          </div>
+          <a href="https://github.com/DanSimonson/" target="blank">
+            <div className="boxes bounceMeOne">
+              <FontAwesomeIcon
+                className="stayWhite"
+                icon={faGithub}
+              ></FontAwesomeIcon>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dansimonsonmariposaweb/"
+            target="blank"
+          >
+            <div className="boxes bounceMeTwo">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="stayWhite"
+              ></FontAwesomeIcon>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/mariposaweb.net/" target="blank">
+            <div className="boxes bounceMeThree">
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="stayWhite"
+              ></FontAwesomeIcon>
+            </div>
+          </a>
+          <a href="https://twitter.com/simonsondan?lang=en" target="blank">
+            <div className="boxes bounceMeFour">
+              <FontAwesomeIcon
+                icon={faTwitter}
+                className="stayWhite"
+              ></FontAwesomeIcon>
+            </div>
+          </a>
         </div>
         <div className="helloSection">
           <div id="left">

@@ -70,6 +70,9 @@ body {
 .iconSize {
   font-size: 5rem;
 }
+.stayWhite {
+  color: white;
+}
 .bounceMeOne:hover {
   animation: rubberBand;
   animation-duration: 2s;
@@ -306,6 +309,9 @@ body {
   .transition {
     display: none;
   }
+  /* .bodyWrap {
+    margin-bottom: 1700px;
+  } */
   /* #parent {
     display: flex;
     flex-direction: column;
