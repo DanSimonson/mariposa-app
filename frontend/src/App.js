@@ -8,7 +8,9 @@ import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DisplayGrid from "./Components/DisplayGrid/DisplayGrid";
 import DisplayFooter from "./Components/DisplayFooter/DisplayFooter";
-import { NavLink, Link } from "react-router-dom";
+//import { NavLink, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+import Home from "./Views/Home/Home";
 
 import {
   faGraduationCap,
@@ -26,270 +28,26 @@ import {
 
 function App() {
   const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-    const fetchData = async () => {
-      const { data } = await axios.get("/api/projects");
-      setProjects(data);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({ duration: 2000 });
+  //   const fetchData = async () => {
+  //     const { data } = await axios.get("/api/projects");
+  //     setProjects(data);
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <>
-      <div id="parent">
-        <div className="name">Dan Simonson @ mariposaweb.net</div>
-        <div id="header" className="iconSize">
-          <a href="https://github.com/DanSimonson/" target="blank">
-            <div className="boxes bounceMeOne">
-              <FontAwesomeIcon
-                className="stayWhite"
-                icon={faGithub}
-              ></FontAwesomeIcon>
-            </div>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/dansimonsonmariposaweb/"
-            target="blank"
-          >
-            <div className="boxes bounceMeTwo">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="stayWhite"
-              ></FontAwesomeIcon>
-            </div>
-          </a>
-          <a href="https://www.facebook.com/mariposaweb.net/" target="blank">
-            <div className="boxes bounceMeThree">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="stayWhite"
-              ></FontAwesomeIcon>
-            </div>
-          </a>
-          <a href="https://twitter.com/simonsondan?lang=en" target="blank">
-            <div className="boxes bounceMeFour">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="stayWhite"
-              ></FontAwesomeIcon>
-            </div>
-          </a>
-        </div>
-        <div className="helloSection">
-          <div id="left">
-            <p>Hi. I’m Dan Simonson, nice to meet you.</p>
-            <p>Please take a look around!</p>
-          </div>
-          <div id="right">
-            <p>
-              I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations at mariposaweb.net
-              {/*What would you do if you had
-              a software expert available at your fingertips? */}
-            </p>
-          </div>
-        </div>
-        {/**data-aos="zoom-in-left" */}
-        {/*className="fillerSpan"*/}
-        <div className="filler">
-          Software Engineer<span className="fillerSpan">@mariposaweb.net</span>
-        </div>
-      </div>
-      <div className="wrapper">
-        <div className="transition">Some Stuff About Me</div>
-        <div className="about">
-          <p align="center" data-aos="slide-right">
-            About Dan Simonson
-          </p>
-          <p align="center" data-aos="slide-left">
-            How does he know this stuff
-          </p>
-        </div>
-        <div className="container">
-          <div className="grid-item a" data-aos="zoom-in-up">
-            <span>
-              <FontAwesomeIcon
-                style={{ color: "green" }}
-                icon={faGraduationCap}
-              >
-                Education
-              </FontAwesomeIcon>
-              &nbsp; Education
-            </span>
-            <p className="pClass">
-              I have an Associates in Programming and a Bachelor of Science in
-              Computer Science (cum laude/3.65 GPA) as well as well as several
-              Free Code Camp and HackerRank Certificates
-            </p>
-          </div>
-          <div className="grid-item b" data-aos="zoom-in-up">
-            <span>
-              <FontAwesomeIcon
-                style={{ color: "blue" }}
-                icon={faBriefcase}
-              ></FontAwesomeIcon>
-              &nbsp; Skills
-            </span>
-            <p className="pClass">
-              I enjoy bringing ideas to life in the browser. I am a full stack
-              developer who is well versed in JavaScript, React, Node, CSS3 and
-              their accompanying ecosystems.
-            </p>
-          </div>
-
-          <div className="grid-item c" data-aos="zoom-in-up">
-            <span>
-              <FontAwesomeIcon
-                style={{ color: "red" }}
-                icon={faHeart}
-              ></FontAwesomeIcon>
-              &nbsp; Passion
-            </span>
-            <p className="pClass">
-              Over the last several years I have invested thousands of hours
-              honing my craft. I am perpetually working on improving my chops
-              one problem at a time.
-            </p>
-          </div>
-        </div>
-      </div>
-      <DisplayGrid />
-      {/* <DisplayFooter /> */}
+      {/*<div>navbar</div>*/}
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          {/*<Route path="users/*" element={<Users />} />*/}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
 
 export default App;
-
-{
-  /* <div className="container"> 
-
- <div className="grid-item a" data-aos="zoom-in-up">
-            <span>
-              <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education{" "}
-            </span>
-            <p>
-              {" "}
-              I have an Associates in Programming and a Bachelor of Science in
-              Computer Science (cum laude/3.65 GPA) as well as a Free Code Camp
-              Front End Certificate
-            </p>
-          </div> 
- <div className="grid-item b" data-aos="zoom-in-up">
-            <span>
-              <i class="fa fa-briefcase" aria-hidden="true"></i> Skills
-            </span>
-            <p>
-              I enjoy bringing ideas to life in the browser. I am a full stack
-              developer who is well versed in JavaScript, React, Vue, CSS3 and
-              their accompanying ecosystems.
-            </p>
-          </div> 
-
-          
- <div className="grid-item c" data-aos="zoom-in-up">
-            <span>
-              <i class="fa fa-heart" aria-hidden="true"></i> Passion
-            </span>
-            <p>
-              Over the last several years I have invested thousands of hours
-              honing my craft. I am perpetually working on improving my chops
-              one problem at a time.{" "}
-            </p>
-          </div> 
-
- </div>   */
-}
-
-{
-  /* <main className="con">
-      <div className="row center">
-        {projects.map((project) => (
-          <div key={project._id}>{project.name}</div>
-        ))}
-      </div>
-      { <div style={{ height: "100%" }}> 
-       <div id="header">
-          <div className="boxes"></div>
-        </div> 
-      
-        </div> 
-        <div id="right">
-          <p>
-            I am passionate about building excellent software that improves the
-            lives of those around me. I specialize in creating software for
-            clients ranging from individuals and small-businesses all the way to
-            large enterprise corporations. What would you do if you had a
-            software expert available at your fingertips?
-          </p>
-        </div>
-      </div>
-       </div>  */
-}
-{
-  /* <div className="wrapper">
-        <div className="about"> */
-}
-/* <ScrollAnimation
-            duration={5}
-            initiallyVisible={true}
-            animateIn="bounceInRight"
-          > */
-/* <p align="center" data-aos="slide-right">
-            About Dan Simonson
-          </p> */
-/* </ScrollAnimation>
-          <ScrollAnimation
-            duration={5}
-            initiallyVisible={true}
-            animateIn="bounceInLeft"
-          > */
-/* <p align="center" data-aos="slide-left">
-            How does he know this stuff
-          </p> */
-/* </ScrollAnimation> */
-/* </div>
-        <div className="container"> */
-/* <ScrollAnimation duration={3} animateIn="rollIn"> */
-/* <div className="grid-item a" data-aos="zoom-in-up">
-            <span>
-              <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education{" "}
-            </span>
-            <p>
-              {" "}
-              I have an Associates in Programming and a Bachelor of Science in
-              Computer Science (cum laude/3.65 GPA) as well as a Free Code Camp
-              Front End Certificate
-            </p>
-          </div> */
-// {/* </ScrollAnimation> */}
-/* <ScrollAnimation duration={3} animateIn="rollIn"> */
-/* <div className="grid-item b" data-aos="zoom-in-up">
-            <span>
-              <i class="fa fa-briefcase" aria-hidden="true"></i> Skills
-            </span>
-            <p>
-              I enjoy bringing ideas to life in the browser. I am a full stack
-              developer who is well versed in JavaScript, React, Vue, CSS3 and
-              their accompanying ecosystems.
-            </p>
-          </div> */
-/* </ScrollAnimation>
-          <ScrollAnimation duration={3} animateIn="rollIn"> */
-/* <div className="grid-item c" data-aos="zoom-in-up">
-            <span>
-              <i class="fa fa-heart" aria-hidden="true"></i> Passion
-            </span>
-            <p>
-              Over the last several years I have invested thousands of hours
-              honing my craft. I am perpetually working on improving my chops
-              one problem at a time.{" "}
-            </p>
-          </div> */
-/* </ScrollAnimation> */
-/* </div> */
-/* </div> */
-/* </main>*/
