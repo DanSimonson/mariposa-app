@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DisplayGrid from "../../Components/DisplayGrid/DisplayGrid";
 import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
+import Navbar from "../../Components/Navbar/Navbar";
 import { NavLink, Link } from "react-router-dom";
 
 import {
@@ -35,8 +36,9 @@ function Home() {
 
   return (
     <>
+      <Navbar />
       <div id="parent">
-        <div className="name">Dan Simonson @ mariposaweb.net</div>
+        <div className="name">mariposaweb.net</div>
         <div id="header" className="iconSize">
           <a href="https://github.com/DanSimonson/" target="blank">
             <div className="boxes bounceMeOne">
@@ -90,8 +92,6 @@ function Home() {
             </p>
           </div>
         </div>
-        {/**data-aos="zoom-in-left" */}
-        {/*className="fillerSpan"*/}
         <div className="filler">
           Software Engineer<span className="fillerSpan">@mariposaweb.net</span>
         </div>
