@@ -11,4 +11,29 @@
   border-radius: 50%;
   z-index: 20;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-icon {
+  position: relative;
+  width: 50px;
+  height: 2px;
+  background: #333;
+}
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  transition: transform 0.2s;
+}
+.nav-icon::before {
+  transform: translateY(-12px);
+}
+.nav-icon::after {
+  transform: translateY(12px);
 }
