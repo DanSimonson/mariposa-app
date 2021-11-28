@@ -37,3 +37,58 @@
 .nav-icon::after {
   transform: translateY(12px);
 }
+.checkbox-toggler:checked + .nav-btn .nav-icon {
+  background-color: transparent;
+}
+.checkbox-toggler:checked + .nav-btn .nav-icon::before {
+  transform: translateY(0px) rotate(135deg);
+}
+.checkbox-toggler:checked + .nav-btn .nav-icon::after {
+  transform: translateY(0px) rotate(-135deg);
+}
+.nav-bg {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: fixed;
+  top: 22px;
+  right: 60px;
+  background-image: radial-gradient(#c3073f, #950748);
+  z-index: 14;
+  transition: transform 1.2s cubic-bezier(0.86, 0, 0.7, 1);
+}
+
+.checkbox-toggler:checked ~ .nav-bg {
+  transform: scale(60);
+}
+.navigation {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: 15;
+  transition: transform 3s 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.nav-list {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+.nav-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.checkbox-toggler:checked ~ .navigation {
+  opacity: 1;
+  transform: translate(0%);
+}

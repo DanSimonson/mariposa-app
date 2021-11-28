@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DisplayGrid from "../../Components/DisplayGrid/DisplayGrid";
 import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
 import Navbar from "../../Components/Navbar/Navbar";
-import { NavLink, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   faGraduationCap,
@@ -24,6 +24,7 @@ import {
 import "./Home.scss";
 
 function Home() {
+  let navigate = useNavigate();
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -33,6 +34,10 @@ function Home() {
     };
     fetchData();
   }, []);
+
+  const goToRoute = () => {
+    navigate("/resume");
+  };
 
   return (
     <>
@@ -92,8 +97,8 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="filler">
-          Software Engineer<span className="fillerSpan">@mariposaweb.net</span>
+        <div className="filler" onClick={goToRoute}>
+          See Resume<span className="fillerSpan">@mariposaweb.net</span>
         </div>
       </div>
       <div className="wrapper">
