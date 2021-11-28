@@ -160,7 +160,6 @@ function Home() {
         </div>
       </div>
       <DisplayGrid />
-      {/* <DisplayFooter /> */}
     </>
   );
 }

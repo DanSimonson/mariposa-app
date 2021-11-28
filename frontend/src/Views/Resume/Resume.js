@@ -1,6 +1,8 @@
 import React from "react";
 import "./Resume.scss";
 import Navbar from "../../Components/Navbar/Navbar";
+import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
+
 function Resume() {
   return (
     <>
@@ -175,6 +177,7 @@ function Resume() {
               </p>
             </li>
           </ul>
+          <DisplayFooter />
         </div>
       </div>
       <div className="resumeContainerTwo"></div>
