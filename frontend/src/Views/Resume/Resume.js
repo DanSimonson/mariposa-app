@@ -161,7 +161,7 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>mariposaweb.net, Silang, Cavite Philippines</p>
+            <p>mariposaweb.net, Philippines</p>
             <p>Sep 2016 to Nov 2018</p>
           </div>
           <ul>
