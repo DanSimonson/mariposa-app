@@ -93,8 +93,6 @@ function Home() {
               the lives of those around me. I specialize in creating software
               for clients ranging from individuals and small-businesses all the
               way to large enterprise corporations at mariposaweb.net
-              {/*What would you do if you had
-            a software expert available at your fingertips? */}
             </p>
           </div>
         </div>
@@ -161,10 +159,6 @@ function Home() {
         </div>
         <DisplayGrid />
       </div>
-
-      {/* <div className="carouselSection">
-        <Carousel />
-      </div> */}
     </>
   );
 }

@@ -77,9 +77,9 @@ function DisplayGrid() {
   return (
     <React.Fragment>
       <div className="bodyWrap">
-        {/* <div className="heroImage">
+        <div className="heroImage">
           <div className="bg-image"></div>
-        </div> */}
+        </div>
         {/* <nav className="displaygrid_navbar">
           <div className="displaygrid_brand_title">MARIPOSAWEB</div>
           <a href="#" className="displaygrid_toggle_button">
