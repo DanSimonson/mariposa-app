@@ -52,7 +52,7 @@ function Carousel() {
       id: 4,
       title: "Wysiwyg Keeper",
       label: "",
-      url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638173254/mariposa-app/documents.jpg",
+      url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638224953/mariposa-app/docum.jpg",
       link: "https://github.com/DanSimonson/wysiwyg",
     },
     {
