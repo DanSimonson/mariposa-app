@@ -74,6 +74,11 @@
     width: 372px;
   }
 }
+@media (max-width: 500px) {
+  .slider-wrapper {
+    width: 345px;
+  }
+}
 @media (max-width: 450px) {
   .slider-wrapper {
     width: 335px;
