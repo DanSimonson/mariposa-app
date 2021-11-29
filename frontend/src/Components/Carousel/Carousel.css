@@ -25,9 +25,9 @@
   cursor: pointer;
   font-size: 4rem;
 }
-ul.slick-dots {
+/* ul.slick-dots {
   color: lightgoldenrodyellow;
-}
+} */
 .slick-slide-image {
   max-width: 100%;
   height: auto;
@@ -60,4 +60,27 @@ ul.slick-dots {
 .prev-slick-arrow {
   color: #fff; /*#000000;*/
   font-size: 48px;
+}
+
+/*media queries*/
+/**everything under*/
+@media (max-width: 900px) {
+  .slider-wrapper {
+    width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .slider-wrapper {
+    width: 372px;
+  }
+}
+@media (max-width: 450px) {
+  .slider-wrapper {
+    width: 345px;
+  }
+}
+@media (max-width: 375px) {
+  .slider-wrapper {
+    width: 315px;
+  }
 }

@@ -1,12 +1,12 @@
 import React from "react";
 import "./Carousel.css";
-
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 
 function Carousel() {
+  let navigate = useNavigate();
   const settings = {
     dots: true,
     infinite: true,
@@ -24,33 +24,7 @@ function Carousel() {
         <div className="prev-slick-arrow"> ⫷ </div>
       </div>
     ),
-    // responsive: [
-    //   {
-    //     breakpoint: 700,
-    //     settings: {
-    //       arrows: false,
-    //       slidesToShow: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 500,
-    //     settings: {
-    //       arrows: false,
-    //       slidesToShow: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 400,
-    //     settings: {
-    //       arrows: false,
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ],
   };
-  //https://res.cloudinary.com/dmglopmul/image/upload/v1623451582/projectPhotos/dossier/shop.jpg
-  //https://res.cloudinary.com/dmglopmul/image/upload/v1539024962/projectPhotos/mariposaweb/code.jpg
-  //mariposa spa website
 
   const slidesData = [
     {
@@ -58,48 +32,70 @@ function Carousel() {
       title: "mariposa store",
       label: "",
       url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638171619/mariposa-app/store.jpg",
+      link: "https://github.com/DanSimonson/dan_ghie_store",
     },
     {
       id: 2,
       title: "mariposa spa",
       label: "",
       url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638172063/mariposa-app/spa.jpg",
+      link: "https://github.com/DanSimonson/spa",
     },
     {
       id: 3,
       title: "Avenger App",
       label: "",
       url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638177525/mariposa-app/marvel.jpg",
+      link: "https://github.com/DanSimonson/dossiers",
     },
     {
       id: 4,
       title: "Wysiwyg Keeper",
       label: "",
       url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638173254/mariposa-app/documents.jpg",
+      link: "https://github.com/DanSimonson/wysiwyg",
     },
     {
       id: 5,
       title: "Shining Nature",
       label: "",
       url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638173583/mariposa-app/nature.jpg",
+      link: "https://github.com/DanSimonson/shining",
     },
     {
       id: 6,
       title: "Hangman Game",
       label: "",
       url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638177702/mariposa-app/hangm.jpg",
+      link: "https://github.com/DanSimonson/react-hangman",
     },
   ];
 
   const goToProject = (id) => {
-    //.target.innerText
     console.log("slide id: ", id);
     //console.log("slidesData: ", slidesData);
     const idArr = [1, 2, 3, 4, 5, 6, 7];
-    for (let i = 0; i < idArr.length; i++) {
-      if ((idArr[i] = id)) {
-        console.log("id: ", id);
-      }
+    switch (id) {
+      case 1:
+        window.location.assign("https://github.com/DanSimonson/dan_ghie_store");
+        break;
+      case 2:
+        window.location.assign("https://github.com/DanSimonson/spa");
+        break;
+      case 3:
+        window.location.assign("https://tender-shockley-0f4de4.netlify.com/");
+        break;
+      case 4:
+        window.location.assign("https://romantic-agnesi-f35b5d.netlify.app/");
+        break;
+      case 5:
+        window.location.assign("https://brave-mccarthy-f6fbb2.netlify.app/");
+        break;
+      case 6:
+        window.location.assign("https://github.com/DanSimonson/react-hangman");
+        break;
+      default:
+      // code block
     }
   };
 
