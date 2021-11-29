@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DisplayGrid from "../../Components/DisplayGrid/DisplayGrid";
 import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
+import Carousel from "../../Components/Carousel/Carousel";
 import Navbar from "../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 
@@ -158,8 +159,12 @@ function Home() {
             </p>
           </div>
         </div>
+        <DisplayGrid />
       </div>
-      <DisplayGrid />
+
+      {/* <div className="carouselSection">
+        <Carousel />
+      </div> */}
     </>
   );
 }

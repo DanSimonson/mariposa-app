@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import "./DisplayGrid.scss";
 import DisplayFooter from "../DisplayFooter/DisplayFooter";
+import Carousel from "../Carousel/Carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { NavLink, Link } from "react-router-dom";
+
 function DisplayGrid() {
   let cards = [
     {
@@ -151,6 +155,13 @@ function DisplayGrid() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="carouselSection">
+          <div className="background-animation-container">
+            <div className="transitionToCarousel">Some Personal Projects</div>
+            <div class="background-gradient"></div>
+            <Carousel />
+          </div>
         </div>
         <DisplayFooter />
       </div>
