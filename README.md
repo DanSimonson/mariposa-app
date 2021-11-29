@@ -10,7 +10,7 @@
 
 ## App Info
 
-This is Dan Simonson's Website displaying work history, work projects, personal coding projects and general information.
+This is Dan Simonson's Website displaying work history, work projects,\ personal coding projects and general information.
 
 ### Author
 
