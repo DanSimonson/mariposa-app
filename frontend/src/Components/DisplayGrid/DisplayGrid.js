@@ -163,7 +163,7 @@ function DisplayGrid() {
             <Carousel />
           </div>
         </div>
-        <DisplayFooter />
+        {/*<DisplayFooter />*/}
       </div>
     </React.Fragment>
   );
