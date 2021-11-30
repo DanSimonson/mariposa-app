@@ -123,7 +123,7 @@ body {
   color: #fff;
   font-size: 3rem;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 4rem; /*1rem*/
 }
 .container {
   top: 37%;
@@ -146,19 +146,18 @@ body {
   color: #525d68;
   -webkit-text-stroke: 1px black;
   font-size: 3rem;
-  width: 80%;
+  width: 90%;
+  margin: 2rem 0 2rem 0;
 }
-.grid-item a {
-  padding: 0.5px;
-}
-.grid-item b {
-  padding: 0.5px;
-}
-.grid-item c {
-  padding: 0.5px;
-}
+
 .faGraduationCap {
   color: red;
+}
+.pClass {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.spanClass {
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 /*media queries*/

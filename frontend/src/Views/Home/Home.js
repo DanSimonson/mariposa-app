@@ -112,7 +112,7 @@ function Home() {
         </div>
         <div className="container">
           <div className="grid-item a" data-aos="zoom-in-up">
-            <span>
+            <span className="spanClass">
               <FontAwesomeIcon
                 style={{ color: "green" }}
                 icon={faGraduationCap}
@@ -128,7 +128,7 @@ function Home() {
             </p>
           </div>
           <div className="grid-item b" data-aos="zoom-in-up">
-            <span>
+            <span className="spanClass">
               <FontAwesomeIcon
                 style={{ color: "blue" }}
                 icon={faBriefcase}
@@ -143,7 +143,7 @@ function Home() {
           </div>
 
           <div className="grid-item c" data-aos="zoom-in-up">
-            <span>
+            <span className="spanClass">
               <FontAwesomeIcon
                 style={{ color: "red" }}
                 icon={faHeart}
