@@ -159,8 +159,9 @@ function DisplayGrid() {
         <div className="carouselSection">
           <div className="background-animation-container">
             <div className="transitionToCarousel">Some Personal Projects</div>
-            <div class="background-gradient"></div>
+            {/*<div class="background-gradient"></div>*/}
             <Carousel />
+            {/*<div class="background-gradient"></div>*/}
           </div>
         </div>
         {/*<DisplayFooter />*/}

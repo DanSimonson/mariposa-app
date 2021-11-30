@@ -160,6 +160,52 @@ body {
   margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
+/* media queries */
+@media (max-width: 767px) {
+  .display-footer-basic-centered {
+    //margin-top: 400px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .display-footer-basic-centered {
+    padding: 35px;
+    //margin-top: 450px;
+    margin-top: 0;
+  }
+
+  .display-footer-basic-centered .display-footer-company-motto {
+    font-size: 18px;
+  }
+
+  .display-footer-basic-centered .display-footer-company-name {
+    font-size: 12px;
+  }
+
+  .display-footer-basic-centered .display-footer-links {
+    font-size: 14px;
+    padding: 25px 0 20px;
+  }
+
+  .display-footer-basic-centered .display-footer-links a {
+    line-height: 1.8;
+  }
+}
+@media (max-width: 425px) {
+  .display-footer-basic-centered {
+    //margin-top: 500px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  .display-footer-basic-centered {
+    //margin-top: 550px;
+    margin-top: 0;
+  }
+}
+
+/** end footer **/
+
 /*media queries*/
 /**everything under*/
 @media (max-width: 767px) {
