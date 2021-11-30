@@ -159,18 +159,18 @@
   height: 100%;
 }
 .card__body {
-  padding: 80px 70px 50px 70px;
+  padding: 70px 60px 50px 60px;
   text-align: center;
 }
 .card__body h3 {
   color: var(--dark);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 .card__body p {
   color: var(--dark);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
 }
 .more {
@@ -426,6 +426,9 @@ a.displaygrid_navlink:hover {
     width: 550px;
     height: 500px;
   }
+  .card__body {
+    padding: 120px 60px 40px 60px;
+  }
   .card__body h3 {
     font-size: 26px;
   }
@@ -452,6 +455,9 @@ a.displaygrid_navlink:hover {
   .card_outer {
     width: 800px;
     height: 600px;
+  }
+  .card__body {
+    padding: 130px 70px 20px 70px;
   }
   .card__body h3 {
     font-size: 32px;
