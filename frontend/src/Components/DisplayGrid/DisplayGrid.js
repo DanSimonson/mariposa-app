@@ -156,6 +156,7 @@ function DisplayGrid() {
             </div>
           ))}
         </div>
+
         <div className="carouselSection">
           <div className="background-animation-container">
             <div className="transitionToCarousel">Some Personal Projects</div>

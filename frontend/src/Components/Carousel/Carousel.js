@@ -72,9 +72,6 @@ function Carousel() {
   ];
 
   const goToProject = (id) => {
-    console.log("slide id: ", id);
-    //console.log("slidesData: ", slidesData);
-    const idArr = [1, 2, 3, 4, 5, 6, 7];
     switch (id) {
       case 1:
         window.location.assign("https://github.com/DanSimonson/dan_ghie_store");
