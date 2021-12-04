@@ -1,5 +1,6 @@
 import express from "express";
 import projectRouter from "./routers/projectRouter.js";
+import cardRouter from "./routers/cardRouter.js";
 import connectDB from "./config/db.js";
 import dotenv from "dotenv";
 import path from "path";
@@ -14,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //routes
 app.use("/api/projects", projectRouter);
-
+app.use("/api/cards", cardRouter);
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "/frontend/build")));
 app.get("*", (req, res) =>

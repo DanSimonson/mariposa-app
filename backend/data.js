@@ -1,38 +1,6 @@
-// const data = {
-//   projects: [
-//     {
-//       _id: 1,
-//       index: 0,
-//       name: 'projectOne',
-//       link: '/something/something_else/1', 
-//       url: "https://github.com/DanSimonson/dan_ghie_store",
-//       picture:
-//         "https://res.cloudinary.com/dmglopmul/image/upload/v1623451582/projectPhotos/dossier/shop.jpg",  
-//     },
-//     {
-//       _id: 2,
-//       index: 1,
-//       name: 'projectTwo',
-//       link: '/something/something_else/2',
-//       url: "https://github.com/DanSimonson/dan_ghie_store",
-//       picture:
-//         "https://res.cloudinary.com/dmglopmul/image/upload/v1623451582/projectPhotos/dossier/shop.jpg", 
-//     },
-//     {
-//       _id: 3,
-//       index: 2,
-//       name: 'projectThree',
-//       index: '2',
-//       link: '/something/something_else/3',
-//       url: "https://github.com/DanSimonson/dan_ghie_store",
-//       picture:
-//         "https://res.cloudinary.com/dmglopmul/image/upload/v1623451582/projectPhotos/dossier/shop.jpg",  
-//     }
-//   ]
-// }
 const data = {
   projects: [
-    { 
+    {
       index: 0,
       name: "mariposa online store",
       url: "https://github.com/DanSimonson/dan_ghie_store",
@@ -111,8 +79,46 @@ const data = {
       url: "https://github.com/DanSimonson/ghie-als",
       picture:
         "https://res.cloudinary.com/dmglopmul/image/upload/v1597114370/projectPhotos/dossier/logoALSCropPortfolio.png",
-    }
-  ]
-}
+    },
+  ],
+  cards: [
+    {
+      title: "Philippine Seafarers Union - PSU",
+      content:
+        "I created a rich text editor and document control system, allowing the Philippine Seafarers Union to better track their members.",
+    },
+    {
+      id: "2",
+      title: "Routematch",
+      content:
+        "I developed a web page within a web portal that consumed an API and utilized a continuous scrolling table.",
+    },
+    {
+      title: "Macys",
+      content:
+        "I helped develep a web application allowing Macy's employees to track logistical shipping data for products sent to Macy's Backstage stores.",
+    },
+    {
+      title: "Monsanto",
+      content:
+        "Primary Front End Developer creating a sales dashboard allowing Monsanto to organize and track their farm business partners.",
+    },
+    {
+      title: "auctionOS",
+      content:
+        "Full-Stack Developer updating auctionos.com's operating system for car auctions.",
+    },
+    {
+      title: "Safeway",
+      content:
+        "Software Engineer creating a dashboard to logistically track products for grocery stores.",
+    },
+    {
+      title: "Next Egg",
+      content:
+        "The next egg hatched could be your business. Email or Text me for more information.",
+    },
+  ],
+};
 
-export default data
+export default data;
