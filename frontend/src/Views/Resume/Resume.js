@@ -2,7 +2,6 @@ import React from "react";
 import "./Resume.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
-//import Card from "../../../../backend/models/cardModel";
 
 function Resume() {
   return (
@@ -48,7 +47,10 @@ function Resume() {
               </p>
             </li>
             <li>
-              <p>Web Technologies: CSS3, FlexBox, CSSGrid, SASS, HTML</p>
+              <p>
+                Web Technologies: CSS3, FlexBox, CSSGrid, SASS, HTML, Redux,
+                Thunk, Axios
+              </p>
             </li>
             <li>
               <p>
@@ -73,10 +75,10 @@ function Resume() {
             </li>
             <li>
               <p>
-                Interface with key stakeholders and apply technical proficiency
-                across different stages of the Software Development Life Cycle.
                 Deliver high quality code. Lead validation for all types of
                 testing and support activities related to implementation.
+                Interface with key stakeholders and apply technical proficiency
+                across different stages of the Software Development Life Cycle.
               </p>
             </li>
           </ul>
@@ -91,7 +93,7 @@ function Resume() {
             <li>
               <p>
                 Developing new user-facing features using React.js, JavaScript,
-                Node.js, CSS. Translated designs and wireframes into
+                Redux, Node.js, CSS. Translated designs and wireframes into
                 high-quality code. Building reusable components and front-end
                 libraries for future use. Optimized components for maximum
                 performance. Utilized Redux, Thunk, JWT Authentication.
@@ -129,14 +131,14 @@ function Resume() {
             <li>
               <p>
                 Designed, coded and maintained new features for using HTML, CSS,
-                React, Redux and JavaScript. Created functional applications
-                that feature user-friendly design and clear navigation for
-                software. Worked in teams using agile development with SCRUM
-                methodology to successfully deliver features each sprint.
-                Assisted in the development of applications and features that
-                will be put on the website and in internal functions as well
-                Implementing user interface components using React.js concepts
-                and workflows.
+                React, Redux, Thunk and JavaScript. Created functional
+                applications that feature user-friendly design and clear
+                navigation for software. Worked in teams using agile development
+                with SCRUM methodology to successfully deliver features each
+                sprint. Assisted in the development of applications and features
+                that will be put on the website and in internal functions as
+                well Implementing user interface components using React.js
+                concepts and workflows.
               </p>
             </li>
           </ul>
@@ -197,7 +199,7 @@ function Resume() {
                 Vue, React, Firestore, Node.js, Authentication. Full-Stack
                 Development creating functional applications that feature
                 user-friendly design and clear navigation for websites
-                Management Maintained client relationships while also managing
+                Management. Maintained client relationships while also managing
                 project scope.
               </p>
             </li>
