@@ -1,12 +1,11 @@
 import axios from "axios";
-//import { response } from "express";
 import { LIST_CARDS } from "../Constants/CardConstants";
 import data from "../data";
 
 export const listCards = () => (dispatch, getState) => {
   const response = axios.get("/api/cards/");
 
-  return dispatch({
+  dispatch({
     type: LIST_CARDS,
     payload: "response",
   });

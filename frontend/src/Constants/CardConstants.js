@@ -1,1 +1,4 @@
 export const LIST_CARDS = "LIST_CARDS";
+export const LIST_CARDS = "LIST_CARDS_REQUEST";
+export const LIST_CARDS = "LIST_CARDS_SUCCESS";
+export const LIST_CARDS = "LIST_CARDS_FAILURE";

@@ -5,8 +5,11 @@ import Carousel from "../Carousel/Carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NavLink, Link } from "react-router-dom";
+import { listCards } from "../../Actions/CardActions";
+import { useSelector, useDispatch } from "react-redux";
 
 function DisplayGrid() {
+  let dispatch = useDispatch();
   let cards = [
     {
       id: "1",
@@ -69,10 +72,11 @@ function DisplayGrid() {
     cardElement.addEventListener("click", function (e) {
       cardElement.classList.toggle("is-flipped");
     });
-    // toggleButton.addEventListener("click", () => {
-    //   navbarLinks.classList.toggle("active");
-    // });
   }, []);
+
+  useEffect(() => {
+    dispatch(listCards());
+  }, [dispatch]);
 
   return (
     <React.Fragment>

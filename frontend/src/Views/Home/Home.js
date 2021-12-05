@@ -10,9 +10,8 @@ import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
 import Carousel from "../../Components/Carousel/Carousel";
 import Navbar from "../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
-//import { listCardsReducer } from "../../Reducers/cardReducer";
-import { listCards } from "../../Actions/CardActions";
-import { useSelector, useDispatch } from "react-redux";
+//import { listCards } from "../../Actions/CardActions";
+//import { useSelector, useDispatch } from "react-redux";
 import {
   faGraduationCap,
   faBriefcase,
@@ -27,9 +26,12 @@ import {
 import "./Home.scss";
 
 function Home() {
-  let dispatch = useDispatch();
+  //let dispatch = useDispatch();
   let navigate = useNavigate();
+  //const cardList = useSelector((state) => state.listCards);
+  //console.log("cardList: ", cardList);
   const [projects, setProjects] = useState([]);
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
     const fetchData = async () => {
@@ -38,9 +40,9 @@ function Home() {
     };
     fetchData();
   }, []);
-  useEffect(() => {
-    dispatch(listCards());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(listCards());
+  // }, [dispatch]);
 
   const goToRoute = () => {
     navigate("/resume");
