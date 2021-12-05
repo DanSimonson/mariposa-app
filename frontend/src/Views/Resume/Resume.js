@@ -2,6 +2,7 @@ import React from "react";
 import "./Resume.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import DisplayFooter from "../../Components/DisplayFooter/DisplayFooter";
+//import Card from "../../../../backend/models/cardModel";
 
 function Resume() {
   return (
@@ -42,22 +43,21 @@ function Resume() {
               <p>Programming Languages: JavaScript</p>
             </li>
             <li>
-              <p>Frameworks: React, Node.js, Express, Vue</p>
+              <p>
+                Frameworks: React, Node.js, Express, Vue, Bootstrap, Materialize
+              </p>
             </li>
             <li>
-              <p>
-                Web Technologies: CSS3, FlexBox, CSSGrid, SASS, HTML, Bootstrap,
-                Materialize
-              </p>
+              <p>Web Technologies: CSS3, FlexBox, CSSGrid, SASS, HTML</p>
             </li>
             <li>
               <p>
                 Developmnent Tools: Git, Github, Chrome Dev Tools, MongoDB,
-                MySql, Jest, React Testing Library{" "}
+                Mongoose, MySql, Jest, React Testing Library
               </p>
             </li>
             <li>
-              <p>Methodoligies: Agile, Scrum, Kanban, Waterfall </p>
+              <p>Methodoligies: Agile, Scrum, Waterfall </p>
             </li>
           </ul>
           <div className="subTitleWork">
@@ -69,7 +69,15 @@ function Resume() {
           </div>
           <ul>
             <li>
-              <p>React Front End Developer</p>
+              <p>Technology Analyst</p>
+            </li>
+            <li>
+              <p>
+                Interface with key stakeholders and apply technical proficiency
+                across different stages of the Software Development Life Cycle.
+                Deliver high quality code. Lead validation for all types of
+                testing and support activities related to implementation.
+              </p>
             </li>
           </ul>
           <div className="work-title">
@@ -78,13 +86,15 @@ function Resume() {
           </div>
           <ul>
             <li>
+              <p>Software Engineer</p>
+            </li>
+            <li>
               <p>
-                Designed, coded and maintained new features for using React,
-                JavaScript, Node.JS and CSS. Created functional applications
-                that feature user-friendly design and clear navigation for
-                retail grocery store. Assisted in the development of
-                applications and features that will be put on the website,
-                utilized Redux, Thunk, JWT Authentication.
+                Developing new user-facing features using React.js, JavaScript,
+                Node.js, CSS. Translated designs and wireframes into
+                high-quality code. Building reusable components and front-end
+                libraries for future use. Optimized components for maximum
+                performance. Utilized Redux, Thunk, JWT Authentication.
               </p>
             </li>
           </ul>
@@ -93,6 +103,9 @@ function Resume() {
             <p>Sep 2020 to Feb 2021</p>
           </div>
           <ul>
+            <li>
+              <p>Full-Stack Developer</p>
+            </li>
             <li>
               <p>
                 Designed, coded and maintained new features for using HTML, CSS,
@@ -111,6 +124,9 @@ function Resume() {
           </div>
           <ul>
             <li>
+              <p>Front-End Developer</p>
+            </li>
+            <li>
               <p>
                 Designed, coded and maintained new features for using HTML, CSS,
                 React, Redux and JavaScript. Created functional applications
@@ -125,10 +141,13 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Charter Global(client AuctionOS), Atlanta, GA</p>
+            <p>Charter Global(client Routematch By Uber), Atlanta, GA</p>
             <p> Aug 2019 to Feb 2020</p>
           </div>
           <ul>
+            <li>
+              <p>Full-Stack Developer</p>
+            </li>
             <li>
               <p>
                 Designed, coded and maintained rider portal using HTML, CSS,
@@ -149,6 +168,9 @@ function Resume() {
           </div>
           <ul>
             <li>
+              <li>
+                <p>Front-End Developer</p>
+              </li>
               <p>
                 Used React framework to create a React-draft-wysiwyg with a
                 document control system with complete CRUD (create, read,
@@ -165,6 +187,9 @@ function Resume() {
             <p>Sep 2016 to Nov 2018</p>
           </div>
           <ul>
+            <li>
+              <p>Freelance Web Developer</p>
+            </li>
             <li>
               <p>
                 Designed, coded and maintained websites and applications for
