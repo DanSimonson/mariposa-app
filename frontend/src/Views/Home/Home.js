@@ -31,7 +31,6 @@ function Home() {
   let navigate = useNavigate();
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    dispatch(listCards());
     Aos.init({ duration: 2000 });
     const fetchData = async () => {
       const { data } = await axios.get("/api/projects");
@@ -39,9 +38,9 @@ function Home() {
     };
     fetchData();
   }, []);
-  // useEffect(() => {
-  //   dispatch(listCards());
-  // }, []);
+  useEffect(() => {
+    dispatch(listCards());
+  }, [dispatch]);
 
   const goToRoute = () => {
     navigate("/resume");
