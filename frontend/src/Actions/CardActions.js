@@ -5,15 +5,26 @@ import {
   LIST_CARDS_SUCCESS,
   LIST_CARDS_FAILURE,
 } from "../Constants/CardConstants";
-import data from "../data";
 
-export const listCards = () => (dispatch, getState) => {
-  const response = axios.get("/api/cards/");
-
-  dispatch({
-    type: LIST_CARDS,
-    payload: "response",
-  });
+export const listCards = () => async (dispatch, getState) => {
+  try {
+    dispatch({ type: LIST_CARDS_REQUEST });
+    const response = await axios.get("/api/cards/");
+    console.log("response.data", response.data);
+    let data = response.data;
+    dispatch({
+      type: LIST_CARDS_SUCCESS,
+      payload: response.data,
+    });
+  } catch (error) {
+    dispatch({
+      type: LIST_CARDS_FAILURE,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
 };
 
 //   dispatch({

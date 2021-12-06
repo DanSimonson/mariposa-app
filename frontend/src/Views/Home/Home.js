@@ -11,7 +11,7 @@ import Carousel from "../../Components/Carousel/Carousel";
 import Navbar from "../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 //import { listCards } from "../../Actions/CardActions";
-//import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import {
   faGraduationCap,
   faBriefcase,
@@ -26,10 +26,9 @@ import {
 import "./Home.scss";
 
 function Home() {
-  //let dispatch = useDispatch();
+  const list = useSelector((state) => state.listCards);
+  console.log("list: ", list);
   let navigate = useNavigate();
-  //const cardList = useSelector((state) => state.listCards);
-  //console.log("cardList: ", cardList);
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {

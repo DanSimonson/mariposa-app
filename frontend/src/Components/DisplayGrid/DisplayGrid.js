@@ -7,10 +7,17 @@ import "slick-carousel/slick/slick-theme.css";
 import { NavLink, Link } from "react-router-dom";
 import { listCards } from "../../Actions/CardActions";
 import { useSelector, useDispatch } from "react-redux";
+//import { listCards } from "../Actions/CardActions";
 
 function DisplayGrid() {
   let dispatch = useDispatch();
-  let cards = [
+
+  const cardStuff = useSelector((state) => state.cardPosts);
+  console.log("cardStuff: ", cardStuff);
+  console.log("cardList.listCards: ", cardStuff.listCards);
+  console.log("cardStuff.loading: ", cardStuff.loading);
+
+  let cardss = [
     {
       id: "1",
       title: "Philippine Seafarers Union - PSU",
@@ -151,14 +158,20 @@ function DisplayGrid() {
           </div>
         </div>
         <div className="display-container">
-          {cards.map((card, index) => (
-            <div key={card.id} className="display-card animateCard">
-              <div className="display-content">
-                <h3>{card.title}</h3>
-                <p>{card.content}</p>
-              </div>
-            </div>
-          ))}
+          {cardStuff.loading ? (
+            <h1>loading...</h1>
+          ) : (
+            <>
+              {cardStuff.listCards.map((card, index) => (
+                <div key={card.id} className="display-card animateCard">
+                  <div className="display-content">
+                    <h3>{card.title}</h3>
+                    <p>{card.content}</p>
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
         </div>
 
         <div className="carouselSection">
