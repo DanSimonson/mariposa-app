@@ -10,7 +10,6 @@ export const listCards = () => async (dispatch, getState) => {
   try {
     dispatch({ type: LIST_CARDS_REQUEST });
     const response = await axios.get("/api/cards/");
-    console.log("response.data", response.data);
     let data = response.data;
     dispatch({
       type: LIST_CARDS_SUCCESS,
@@ -26,14 +25,3 @@ export const listCards = () => async (dispatch, getState) => {
     });
   }
 };
-
-//   dispatch({
-//     type: LIST_CARDS,
-//     payload: data.cards,
-//   });
-// try {
-//   const { data } = await axios.get("/api/products");
-//   dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
-// } catch (error) {
-//   dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
-// }

@@ -18,11 +18,6 @@ export const listCardsReducer = (
   const { type, payload } = action;
   console.log("payload: ", payload);
   switch (type) {
-    // case LIST_CARDS:
-    //   return {
-    //     ...state,
-    //     listCards: payload,
-    //   };
     case LIST_CARDS_REQUEST:
       return {
         loading: true,

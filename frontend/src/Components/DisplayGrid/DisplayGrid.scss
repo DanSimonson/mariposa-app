@@ -322,6 +322,16 @@ a.displaygrid_navlink:hover {
   font-size: 4rem;
   margin-bottom: 10rem;
 }
+.gridloading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  //border: 5px solid yellow;
+  width: 98vw;
+  margin: 0 auto;
+}
 /* end carousel section */
 @media (min-width: 375px) {
   .bodyWrap {

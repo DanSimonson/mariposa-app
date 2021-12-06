@@ -16,6 +16,7 @@ function DisplayGrid() {
   console.log("cardStuff: ", cardStuff);
   console.log("cardList.listCards: ", cardStuff.listCards);
   console.log("cardStuff.loading: ", cardStuff.loading);
+  console.log("cardStuff.error: ", cardStuff.error);
 
   let cardss = [
     {
@@ -159,7 +160,9 @@ function DisplayGrid() {
         </div>
         <div className="display-container">
           {cardStuff.loading ? (
-            <h1>loading...</h1>
+            <h1 className="gridloading">loading...</h1>
+          ) : cardStuff.error ? (
+            <div className="gridloading">{cardStuff.error}</div>
           ) : (
             <>
               {cardStuff.listCards.map((card, index) => (
