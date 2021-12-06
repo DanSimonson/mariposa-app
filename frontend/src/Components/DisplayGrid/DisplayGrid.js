@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { NavLink, Link } from "react-router-dom";
 import { listCards } from "../../Actions/CardActions";
 import { useSelector, useDispatch } from "react-redux";
-//import { listCards } from "../Actions/CardActions";
+import SyncLoader from "react-spinners/SyncLoader";
 
 function DisplayGrid() {
   let dispatch = useDispatch();
@@ -85,7 +85,7 @@ function DisplayGrid() {
   useEffect(() => {
     dispatch(listCards());
   }, [dispatch]);
-
+  //{/*<h1 className="gridloading">loading...</h1>*/}
   return (
     <React.Fragment>
       <div className="bodyWrap">
@@ -160,9 +160,15 @@ function DisplayGrid() {
         </div>
         <div className="display-container">
           {cardStuff.loading ? (
-            <h1 className="gridloading">loading...</h1>
+            <>
+              <SyncLoader loading color="orange" />
+              <h1 style={{ color: "orange" }}>loading...</h1>
+            </>
           ) : cardStuff.error ? (
-            <div className="gridloading">{cardStuff.error}</div>
+            <div className="gridloading">
+              <SyncLoader loading color="orange" />
+              {cardStuff.error}
+            </div>
           ) : (
             <>
               {cardStuff.listCards.map((card, index) => (
