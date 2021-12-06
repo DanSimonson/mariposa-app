@@ -1,6 +1,7 @@
 ### A Portfolio Website
 
 > This is a full-stack MERN Application utilized as a portfolio site.
+> Technology breakdown: MongoDB, Mongoose, Node, Express, React, Redux, Thunk.
 
 ### DEMO
 
