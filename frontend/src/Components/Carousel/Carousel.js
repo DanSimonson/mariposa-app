@@ -69,6 +69,12 @@ function Carousel() {
       url: "https://res.cloudinary.com/dmglopmul/image/upload/v1638177702/mariposa-app/hangm.jpg",
       link: "https://github.com/DanSimonson/react-hangman",
     },
+    {
+      id: 7,
+      title: "Developer Progress",
+      url: "https://res.cloudinary.com/dmglopmul/image/upload/v1645517366/mariposa-app/chart.jpg",
+      link: "https://github.com/DanSimonson/tracker",
+    },
   ];
 
   const goToProject = (id) => {
@@ -91,6 +97,8 @@ function Carousel() {
       case 6:
         window.location.assign("https://github.com/DanSimonson/react-hangman");
         break;
+      case 7:
+        window.location.assign("https://github.com/DanSimonson/tracker");
       default:
       // code block
     }
