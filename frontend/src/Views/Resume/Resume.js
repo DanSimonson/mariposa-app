@@ -65,7 +65,7 @@ function Resume() {
           <div className="subTitleWork">
             <p>Work History</p>
           </div>
-          <div className="work-title">
+          {/*<div className="work-title">
             <p>AllState, Palo Alto, CA</p>
             <p>Nov 2021 to present</p>
           </div>
@@ -81,7 +81,7 @@ function Resume() {
                 across different stages of the Software Development Life Cycle.
               </p>
             </li>
-          </ul>
+          </ul>*/}
           <div className="work-title">
             <p>TCS(client Safeway), Austin, TX</p>
             <p>Feb 2021 to Nov 2021</p>
