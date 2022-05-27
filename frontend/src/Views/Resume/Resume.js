@@ -84,7 +84,7 @@ function Resume() {
           </ul>*/}
           <div className="work-title">
             <p>TCS(client Safeway), Austin, TX</p>
-            <p>Feb 2021 to Nov 2021</p>
+            <p>Feb 2021 to Present</p>
           </div>
           <ul>
             <li>
