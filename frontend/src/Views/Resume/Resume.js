@@ -204,6 +204,36 @@ function Resume() {
               </p>
             </li>
           </ul>
+          <div className="education-title">
+            <p>Education</p>
+          </div>
+          <ul>
+            {/* <li>
+              <p>Free Code Camp, Front End Libraries Certificate, 2019 </p>
+            </li>
+            <li>
+              <p>Free Code Camp Front End Developer Certificate, 2018</p>
+            </li> */}
+            <li>
+              <p>
+                Bachelor of Science: Computer Science, Saint Martin’s
+                University, Olympia Washington, 2004
+              </p>
+            </li>
+            <li>
+              <p>
+                Associate of Science: Programming, Pierce College Fort
+                Steilacoom, Lakewood, Washington, 2002
+              </p>
+            </li>
+            <li>
+              <p>
+                Bachelor of Arts: Liberal Arts, Excelsior College, Albany, New
+                York, 1997
+              </p>
+            </li>
+          </ul>
+          <div className="bottom-spacer"></div>
           <DisplayFooter />
         </div>
       </div>
